@@ -16,7 +16,7 @@ namespace Bonus17
         }
         public UsedCar(string Make, string Model, int Year, double Price, double Miles):base(Make,Model,Year,Price)
         {
-            Miles = Mileage;
+            Mileage = Miles;
         }
     }
 }

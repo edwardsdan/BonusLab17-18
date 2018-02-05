@@ -51,12 +51,12 @@ namespace Bonus17
                 return 0;
             if (CarList[y].GetType() == typeof(Car))
             {
-                Console.WriteLine("{0}\t{1}\t{2}\t${3:0.00}", CarList[y].Make, CarList[y].Model, CarList[y].Year, CarList[y].Price);
+                Console.WriteLine("{0}\t{1}\t{2}\t${3:0.0}", CarList[y].Make, CarList[y].Model, CarList[y].Year, CarList[y].Price);
                 return x;
             }
             else if (CarList[y].GetType() == typeof(UsedCar))
             {
-                Console.WriteLine("{0}\t{1}\t{2}\t${3:0.00} (Used) {4:0.00}mi", CarList[y].Make, CarList[y].Model, CarList[y].Year, CarList[y].Price, ((UsedCar)CarList[y]).Mileage);
+                Console.WriteLine("{0}\t{1}\t{2}\t${3:0.00} (Used) {4:0.0}mi", CarList[y].Make, CarList[y].Model, CarList[y].Year, CarList[y].Price, ((UsedCar)CarList[y]).Mileage);
                 return x;
             }
             else
